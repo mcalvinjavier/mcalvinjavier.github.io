@@ -1,0 +1,42 @@
+{
+  "productName": "Axie Enemy Energy Calculator",
+  "name": "axie-enemy-energy-calculator",
+  "version": "1.0.0",
+  "description": "Axie Enemy Energy Calculator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "axie-enemy-energy-calculator",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/img/icon.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "installerIcon": "assets/img/icon.ico",
+      "uninstallerIcon": "assets/img/icon.ico",
+      "uninstallDisplayName": "Axie Enemy Energy Calculator",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "repository": "https://github.com/mcalvinjavier/axie_enemy_energy_calculator",
+  "keywords": [
+    "Axie",
+    "calculator"
+  ],
+  "author": "McAlvinJavier",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+  }
+}
