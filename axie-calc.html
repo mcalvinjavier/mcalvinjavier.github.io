@@ -20,18 +20,27 @@
       <div class="row calc">
         <div class="col-sm-9">
           <div class="row">
-            <div class="col-sm-12">
-              <label for="">Energy Count<div class="help-tip">
-                <p>if enemy used energy click (+) if enemy end turn without using energy and you gain energy click (-) so your gained energy will minus to enemy's current energy</p>
-            </div> </label>
-              
+            <div class="col-sm-6">
+                <label for="">Energy Lose
+                  <div class="help-tip">
+                  <p>if enemy used energy or if you gained/steal energy click (+)</p>
+                 </div>
+                </label>
               <input type="number" maxlength="10" name="energy_used" id="energyused" value="0">
             </div>
+            <div class="col-sm-6">
+              <label for="">Energy Gained
+                <div class="help-tip">
+                <p>if enemy gained energy click (+)</p>
+               </div>
+              </label>
+            <input type="number" maxlength="10" name="energy_gained" id="energygained" value="0">
+          </div>
            
             <div class="col-sm-12 text-center">
               <div  class="round-container">
-                  <label for="">Round  <span class="round-count" id="roundcount"></span></label><br>
-                  <img src="assets/img/energyball.png" alt="" width="30" height="30">
+                  <label for="">Round 	&nbsp; <span class="round-count" id="roundcount"> </span></label><br>
+                  <img src="assets/img/energyball.png" alt="" width="50" height="50" class="mb-3">
                   <div class="frac mb-3">
                     <span id="energycount"></span>
                     <span class="symbol">/</span>

@@ -45,12 +45,35 @@ body{
     display: inline-flex;
 }
 .frac {
-    display: inline-block;
-    position: relative;
+    place-content: center;
+    right: 0;
+    display: flex;
+    position: absolute;
     vertical-align: middle;
     letter-spacing: 0.001em;
     color: #fff;
     text-align: center;
+    left: -30px;
+    margin: auto;
+    top: 40px;
+    place-items: center;
+    font-weight: 900;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #462b21;font-size: 18px;
+}
+#endturn{
+    border: 3.5px solid #69493e;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+span#energycount {
+    margin-left: 9px;
 }
 .frac > span {
     display: block;
@@ -59,16 +82,16 @@ body{
 .frac span.bottom {
     position: absolute;
     top: 33%;
-    left: 100%;
+    left: 53%;
 }
 .frac span.symbol {
-    left: 70%;
+    left: 51.5%;
     position: absolute;
-    top: 8%;
+    top: 15%;
 }
 .round-container{
+    position: relative;
     background: rgba(0,0,0,0.5);
-    
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -110,11 +133,13 @@ body{
     text-align: left;
     background-color: #1E2021;
     padding: 20px;
-    width: 300px;
+    width: 180px;
     position: absolute;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
-    left: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 35px;
     color: #FFF;
     font-size: 13px;
@@ -127,8 +152,6 @@ body{
     content: '';
     width:0;
     height: 0;
-    border:6px solid transparent;
-    border-bottom-color:#1E2021;
     left:0;
     top:-12px;
 }

@@ -14,12 +14,12 @@
       "target": [
         "nsis"
       ],
-      "icon": "assets/img/icon.ico",
+      "icon": "assets/img/icon3.ico",
       "requestedExecutionLevel": "requireAdministrator"
     },
     "nsis": {
-      "installerIcon": "assets/img/icon.ico",
-      "uninstallerIcon": "assets/img/icon.ico",
+      "installerIcon": "assets/img/icon3.ico",
+      "uninstallerIcon": "assets/img/icon3.ico",
       "uninstallDisplayName": "Axie Enemy Energy Calculator",
       "license": "license.txt",
       "oneClick": false,

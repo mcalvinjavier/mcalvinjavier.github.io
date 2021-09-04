@@ -5,11 +5,12 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    resizable: false,
     autoHideMenuBar: true,
     width: 550, 
     height: 260,
     title: "Axie Enemy Energy Calculator",
-    icon: __dirname + "/assets/img/icon.ico",
+    icon: __dirname + "/assets/img/icon3.ico",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
