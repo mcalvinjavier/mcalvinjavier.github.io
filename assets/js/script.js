@@ -30,8 +30,8 @@ $(document).ready(function(){
        
        var newenergy = energy - energyused - energydestroyed + 2;
        var newenergytotal = Number(newenergy)  + Number(energygained);
-       if(newenergy >= 10){
-           newenergy = 10;
+       if(newenergytotal >= 10){
+        newenergytotal = 10;
        }
        $("#energycount").text(newenergytotal);
        $("#roundcount").text("  "+ i);
