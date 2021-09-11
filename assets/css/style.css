@@ -6,7 +6,14 @@ html, body{
     background-color: #007bbe;
     width: 100%;
 }
-
+.col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
 .col-sm-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -19,6 +26,14 @@ html, body{
     flex: 0 0 auto;
     width: 25%;
 }
+.col-sm-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.col-sm-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
 input.form-control {
     text-align: center;
 }
@@ -27,10 +42,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: rgba(0,0,0,0.5);
 
 }
 .btn-decrement, .btn-increment {
-    background: #b0c3da!important;
+    background: #e94a5a!important;
     color: #fff;
 }
 .btn-decrement:hover, .btn-increment:hover {
@@ -55,7 +71,7 @@ body{
     text-align: center;
     left: -30px;
     margin: auto;
-    top: 40px;
+    top: 45%;
     place-items: center;
     font-weight: 900;
     width: auto;
@@ -82,18 +98,16 @@ span#energycount {
 .frac span.bottom {
     position: absolute;
     top: 33%;
-    left: 53%;
+    left: 55%;
 }
 .frac span.symbol {
-    left: 51.5%;
+    left: 52.5%;
     position: absolute;
     top: 15%;
 }
 .round-container{
     position: relative;
-    background: rgba(0,0,0,0.5);
     margin-top: 10px;
-    margin-bottom: 15px;
 }
 .action-container{
     display: flex;    
@@ -182,4 +196,7 @@ span#energycount {
 @keyframes fadeIn {
     0% { opacity:0; }
     100% { opacity:100%; }
+}
+.roundnumber{
+    font-size: 24px!important;
 }

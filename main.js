@@ -7,8 +7,8 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     resizable: false,
     autoHideMenuBar: true,
-    width: 550, 
-    height: 260,
+    width: 480, 
+    height: 270,
     title: "Axie Enemy Energy Calculator",
     icon: __dirname + "/assets/img/icon3.ico",
     webPreferences: {
@@ -18,7 +18,7 @@ function createWindow () {
 
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('axie-calc.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

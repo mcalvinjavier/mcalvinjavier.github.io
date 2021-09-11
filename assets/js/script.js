@@ -26,7 +26,9 @@ $(document).ready(function(){
        const energy = $("#energycount").text();
        const energyused = $("#energyused").val();
        const energygained = $("#energygained").val();
-       var newenergy = energy - energyused + 2;
+       const energydestroyed = $("#energydestroyed").val();
+       
+       var newenergy = energy - energyused - energydestroyed + 2;
        var newenergytotal = Number(newenergy)  + Number(energygained);
        if(newenergy >= 10){
            newenergy = 10;
@@ -35,6 +37,7 @@ $(document).ready(function(){
        $("#roundcount").text("  "+ i);
        $("#energyused").val(0);
        $("#energygained").val(0);
+       $("#energydestroyed").val(0);
        $("#energyused").attr({
            "max" : newenergytotal,
            

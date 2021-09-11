@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Axie Enemy Energy Calculator</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap-input-spinner.min.js"></script>
-    
-  </head>
-  
-  <body>
-    <div class="container ">
-      <!-- <div class="text-center">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Axie Enemy Energy Calculator</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap-input-spinner.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container ">
+    <!-- <div class="text-center">
         <img src="assets/img/cloud.png" alt="" class="logo" >
       </div> -->
-      <div class="row calc">
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-6">
-                <label for="">Energy Lose
-                  <div class="help-tip">
-                  <p>if enemy used energy or if you gained/steal energy click (+)</p>
-                 </div>
-                </label>
-              <input type="number" maxlength="10" name="energy_used" id="energyused" value="0">
-            </div>
-            <div class="col-sm-6">
-              <label for="">Energy Gained
-                <div class="help-tip">
-                <p>if enemy gained energy click (+)</p>
-               </div>
-              </label>
+    <div class="row calc">
+      <div class="col-sm-5">
+        <div class="row">
+          <div class="col-sm-12">
+            <label for="">Energy Used
+              <!-- <div class="help-tip">
+              <p>if enemy used energy  click (+)</p>
+              </div> -->
+            </label>
+            <input type="number" maxlength="10" name="energy_used" id="energyused" value="0">
+          </div>
+          <div class="col-sm-12">
+            <label for="">Energy Gained
+              <!-- <div class="help-tip">
+              <p>if enemy gained energy click (+)</p>
+              </div> -->
+            </label>
             <input type="number" maxlength="10" name="energy_gained" id="energygained" value="0">
           </div>
-           
-            <div class="col-sm-12 text-center">
-              <div  class="round-container">
-                  <label for="">Round 	&nbsp; <span class="round-count" id="roundcount"> </span></label><br>
-                  <img src="assets/img/energyball.png" alt="" width="50" height="50" class="mb-3">
-                  <div class="frac mb-3">
-                    <span id="energycount"></span>
-                    <span class="symbol">/</span>
-                    <span class="bottom">10</span>
-                </div>
-              </div>
+          <div class="col-sm-12">
+            <label for="">Energy Destroyed
+              <!-- <div class="help-tip">
+              <p>if enemy energy destroyed click (+)</p>
+              </div> -->
+            </label>
+            <input type="number" maxlength="10" name="energy_gained" id="energydestroyed" value="0">
+          </div>
 
+
+        </div>
+      </div>
+      <div class="col-sm-7 action-container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="round-container">
+              <label class="roundnumber" for="">Round &nbsp; <span class="round-count" id="roundcount"> </span></label><br>
+              <img src="assets/img/energyball.png" alt="" width="55" height="55" class="mb-3">
+              <div class="frac mb-3">
+                <span id="energycount"></span>
+                <span class="symbol">/</span>
+                <span class="bottom">10</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-3 action-container">
           <div class="col-sm-12 text-center">
             <a type="button" class="btn btn-warning text-white" id="endturn">
-              <img src="assets/img/endturn.png" width="35" height="35" >
-              <br>
+              <img src="assets/img/endturn.png" width="15" height="15">
               END TURN</a>
-            <br>
-            <a type="button" class="btn btn-danger mt-2" id="reset">New Match</a>
+          </div>
+          <div class="col-sm-12 text-center">
+            <a type="button" class="btn btn-light mt-2" id="reset">New Match</a>
           </div>
         </div>
       </div>
     </div>
-    
+  </div>
+  </div>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-    <script src="assets/js/script.js"></script>
-    
-  </body>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
 </html>
