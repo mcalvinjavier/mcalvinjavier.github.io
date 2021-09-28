@@ -10,7 +10,7 @@ function createWindow () {
     width: 480, 
     height: 270,
     title: "Axie Enemy Energy Calculator",
-    icon: __dirname + "/assets/img/icon3.ico",
+    icon: __dirname + "/assets/img/iconapp.ico",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
